@@ -1,7 +1,6 @@
 # cloudy-apec-combined
 Cloudy generated models and their comparison with apec photon flux output.
-![alt text]([https://github.com/[username]/[reponame]/blob/[branch]/image.jpg](https://github.com/RitaliG/cloudy-apec-combined/blob/main/comparison.png)?raw=true)![comparison](https://user-images.githubusercontent.com/59788464/203716185-759f0b7a-09a9-416b-8d38-dbdc8aa4d394.png)
-![plot]([./directory_1/directory_2/.../directory_n/plot.png](https://github.com/[username]/[reponame]/blob/[branch]/image.jpg))
+/comparison.png)?raw=true)![comparison](https://user-images.githubusercontent.com/59788464/203716185-759f0b7a-09a9-416b-8d38-dbdc8aa4d394.png width="200" height="400")
 
 ## How to get started? ###
 # CLOUDY model generation
