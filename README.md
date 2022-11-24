@@ -44,7 +44,8 @@ If you have patomdb and apec installed [^apec_down], go ahead with the following
 * Initialise the APEC module and choose the abundances, temperature (kT in keV), normalisation (K in EM units), redshift, metallicity:
   ```
   from threeML import *
-  modapec = APEC();  modapec.abundance_table='Allen'
+  modapec = APEC()
+  modapec.abundance_table='Allen'
   # input params
   modapec.kT.value       = 1.0   # keV temperature
   modapec.K.value        = 1e-2  # Normalization, proportional to emission measure
