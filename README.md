@@ -32,8 +32,25 @@ If you have patomdb and apec installed, go ahead with the following steps:
 * Load threeML conda environment:
   >> conda activate threeML
 
-* Open the jupyter notebook:
+* Open the jupyter notebook and import the PYATOMDB database:
   `>> jupyter-notebook apec-test.ipynb
+   >> 
+* Initialise the APEC module and choose the abundances, temperature (kT in keV), normalisation (K in EM units), redshift, metallicity:
+  ```
+  from threeML import *
+  modapec = APEC();  modapec.abundance_table='Allen'
+  ```
+  modapec.kT.value       = 1.0   # keV temperature
+  modapec.K.value        = 1e-2  # Normalization, proportional to emission measure
+  modapec.redshift.value = 0.    # Source redshift
+  modapec.abund.value    = 0.3   # The metal abundance of each element is set to 0.3 times the Solar abundance
+  ```
+
+* Create energy grid (sets the energy resolution you are sampling) and call modapec for corresponding photon flux:
+  ```
+  energies = np.logspace(-1., 1.5, 2000) # Set up the energy grid ## energy resoultion
+  modapec(energies) # gives the output spectrum in the enrgy bins provided
+  ```
 
 __:bookmark:Dependencies:__ 
 > - apec-test.ipynb &rarr; jupyter notebook to compare cloudy generated emission with APEC photon flux
