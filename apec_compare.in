@@ -1,0 +1,15 @@
+CMB redshift 0.
+##table HM12 redshift 0.
+sphere
+radius 150 to 151 linear kiloparsec
+##table ISM
+abundances "allen73.abn"
+metals 0.3 linear
+hden -4 log
+## constant temperature, T=0.5 keV linear
+coronal, T=2.3e7 K linear
+stop zone 1
+iterate convergence
+age 1e9 years
+save continuum "temp-2.lin" units keV no isotropic
+save diffuse continuum "temp-2-emm.lin" units keV no isotropic
