@@ -39,7 +39,7 @@ If you have patomdb and apec installed, go ahead with the following steps:
   ```
   from threeML import *
   modapec = APEC();  modapec.abundance_table='Allen'
-  ```
+  # input params
   modapec.kT.value       = 1.0   # keV temperature
   modapec.K.value        = 1e-2  # Normalization, proportional to emission measure
   modapec.redshift.value = 0.    # Source redshift
